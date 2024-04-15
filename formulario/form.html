@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <title>EGGSY PORTFOLIO</title>
+</head>
+
+<body>
+    <main>
+        <section class="w100 minH100 white black flex column">
+            <nav class="h60px orange flex justifycenter aligncenter">
+                <a class="pad10 mar5 fs20px fw900 rounded hoverorange nodeco black" href="/#">Home</a>
+                <a class="pad10 mar5 fs20px fw900 rounded hoverorange nodeco black"
+                    href="./formulario/form.html">Contact</a>
+            </nav>
+            <h2 class="pad10 w100 h60px lightyellow black fs30px fw900 flex aligncenter justifycenter">Contact me!</h2>
+            <section class="flex grow justifycenter aligncenter">
+                <form class="flex column w320px lightyellow pad10 rounded">
+                    <!-- CAMPO PARA NOMBRE -->
+                    <fieldset class="pad5 bor0 flex">
+                        <label class="pad5" for="name">Name:</label>
+                        <input class="pad5 grow rendup" type="text" name="name" id="name"
+                            placeholder="Ingrese un nombre">
+                    </fieldset>
+                    <!-- CAMPO PARA PAIS -->
+                    <fieldset class="pad5 bor0 flex">
+                        <label class="pad5" for="country">Country:</label>
+                        <select class="pad5 grow" name="country" id="country">
+                            <option value="argentina">Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="chile">Chile</option>
+                            <option value="peru">Perú</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="" selected>Select!</option>
+                        </select>
+                    </fieldset>
+                    <!-- CAMPO PARA EMAIL -->
+                    <fieldset class="pad5 bor0 flex">
+                        <label class="pad5" for="email">Email:</label>
+                        <input class="pad5 grow" type="text" name="email" id="email">
+                    </fieldset>
+                    <!-- CAMPO PARA CONSULTA -->
+                    <fieldset class="pad5 bor0 flex">
+                        <label class="pad5" for="request">Request:</label>
+                        <textarea class="pad5 grow" name="request" id="request"></textarea>
+                    </fieldset>
+                    <!-- BOTON PARA ENVIO -->
+                    <button class="mar5 pad5 rdown orange fw900" type="submit">SEND!</button>
+                </form>
+            </section>
+            <footer class="w100 h60px lightyellow flex justifycenter aligncenter">
+                <h4 class="black pad10 mar5 fs20px">EGGSY</h4>
+                <img src="../recursos/eggsy.png" class="h30px" class="w320px" alt="eggsy">
+                <h4 class="black pad10 mar5 fs20px">FULL STACK DEVELOPER</h4>
+            </footer>
+        </section>
+    </main>
+    <script src="./form.js"></script>
+</body>
+
+</html>
